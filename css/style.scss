@@ -1,0 +1,95 @@
+.anim-container{
+    height: 100vh;
+    width: 100%;
+    //background: linear-gradient(-30deg,#222831,#30475E,#F05454);
+    background: linear-gradient(-60deg, #e94457, #7b6cea, #f9f9f9);
+    background-size: 200% 200%;
+    animation: color 20s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+*{
+    margin: 0;
+}
+
+:root{
+    --main-black: rgb(26, 25, 25);
+    --main-white: rgb(252, 250, 224);
+    --main-white-darker: rgb(212, 211, 202);
+    --main-black-darker: rgb(38, 36, 36);
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pianoWrapper{
+    background-color: var(--main-black);
+    width: 20rem;
+    height: 12.5rem;
+    margin-bottom: 10rem;
+    border-radius: 15px;
+    padding-left: 1.5rem;
+}
+
+.whiteKeys{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-column-gap: 10px;
+    z-index: 5;
+    margin-top: 4rem;
+}
+
+.blackKeys{
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    grid-column-gap: 15px;
+    margin-left: 1.47rem;
+    z-index: 10;
+    position:absolute;
+    margin-top: 4rem;
+}
+
+.whiteKey{
+    height: 125px;
+    width: 33px;
+    background-color: var(--main-white);
+    border-radius: 10px;
+    transition: 0.05s;
+}
+
+.whiteKey:hover{
+    transition: 0.05s ease;
+    background-color: var(--main-white-darker);
+}
+.blackKey:hover{
+    transition: 0.05s ease;
+    background-color: var(--main-black-darker);
+}
+
+.blackKey{
+    height: 67px;
+    width: 29px;
+    background-color: var(--main-black);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#blankKey{
+    background-color: rgba(255, 255, 255, 0);
+}
+
