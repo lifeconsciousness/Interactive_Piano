@@ -95,6 +95,7 @@ function playSound(indexKey){
         C4_d.play()}
       else if(mode == 1){
         let C4_s = new Audio('./sounds/synth/C4-s.mp3')
+        C4_s.volume = 1.1
         C4_s.play()}
     break;
     case 2:
