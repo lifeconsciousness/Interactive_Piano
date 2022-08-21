@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Piano-synth by lifecon</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&family=Silkscreen&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="./img/note-icon-white.png ">
 </head>
 <body>
     <div class="wrapper anim-container">
@@ -23,7 +24,7 @@
                 <div index = 9 id = "G#" class="blackKey key"></div>
                 <div index = 11 id = "A#" class="blackKey key"></div>
             </div>
-            <div class="whiteKeys">
+            <div class="whiteKeys" whiteKeys>
                 <div index = 1 id = "C" class="whiteKey key"></div>
                 <div index = 3 id = "D" class="whiteKey key"></div>
                 <div index = 5 id = "E" class="whiteKey key"></div>
@@ -33,10 +34,16 @@
                 <div index = 12 id = "B" class="whiteKey key"></div>
             </div>
         </div>
-    
+        <p id="note">Note: </p>
         <div class="controls">
             <p>Z,X,C,V,B,N,M - white keys ||| S,D,G,H,J - black keys.</p>
             <p>Or just use the mouse</p>
+        </div>
+        <div class="myGithub">
+            <a href="https://github.com/lifeconsciousness" target="_blank">
+                <p>@lifeconsciousness</p>
+                <img src="./img/github.png" alt="github icon">
+            </a>
         </div>
 
         <script src="./index.js"></script>
