@@ -21,10 +21,11 @@
 
 *{
     margin: 0;
+    font-family: 'Silkscreen', cursive;
 }
 
 :root{
-    --main-black: rgb(26, 25, 25);
+    --main-black: rgb(31, 29, 29);
     --main-white: rgb(252, 250, 224);
     --main-white-darker: rgb(212, 211, 202);
     --main-black-darker: rgb(38, 36, 36);
@@ -43,13 +44,13 @@
     height: 12.5rem;
     margin-bottom: 10rem;
     border-radius: 15px;
-    padding-left: 1.5rem;
+    padding-left: 1.4rem;
 }
 
 .whiteKeys{
     display: grid;
     grid-template-columns: repeat(9, auto);
-    grid-column-gap: 10px;
+    grid-column-gap: 9.4px;
     z-index: 5;
     margin-top: 4rem;
 }
@@ -91,5 +92,27 @@
 
 #blankKey{
     background-color: rgba(255, 255, 255, 0);
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.pianoModes{
+    margin-bottom: 0.7rem;
+    display: flex;
+    width: 12%;
+}
+
+.radioBtn{
+    accent-color: white;
+    border: 0px;
+    width: 60%;
+    height: 1.8em;
 }
 

@@ -6,32 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins&family=Silkscreen&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="wrapper anim-container">
+        <div class="pianoModes">
+            <input type="radio" name="mode" id="piano" class = "radioBtn">
+            <input type="radio" name="mode" id="synth" class = "radioBtn">
+        </div>
         <div class="pianoWrapper">
             <div class="blackKeys">
-                <div id = "C#" class="blackKey"></div>
-                <div id = "D#" class="blackKey"></div>
+                <div index = 2 id = "C#" class="blackKey key"></div>
+                <div index = 4 id = "D#" class="blackKey key"></div>
                 <div id = "blankKey" class="blackKey"></div>
-                <div id = "F#" class="blackKey"></div>
-                <div id = "G#" class="blackKey"></div>
-                <div id = "A#" class="blackKey"></div>
+                <div index = 7 id = "F#" class="blackKey key"></div>
+                <div index = 9 id = "G#" class="blackKey key"></div>
+                <div index = 11 id = "A#" class="blackKey key"></div>
             </div>
             <div class="whiteKeys">
-                <div id = "C" class="whiteKey"></div>
-                <div id = "D" class="whiteKey"></div>
-                <div id = "E" class="whiteKey"></div>
-                <div id = "F" class="whiteKey"></div>
-                <div id = "G" class="whiteKey"></div>
-                <div id = "A" class="whiteKey"></div>
-                <div id = "B" class="whiteKey"></div>
+                <div index = 1 id = "C" class="whiteKey key"></div>
+                <div index = 3 id = "D" class="whiteKey key"></div>
+                <div index = 5 id = "E" class="whiteKey key"></div>
+                <div index = 6 id = "F" class="whiteKey key"></div>
+                <div index = 8 id = "G" class="whiteKey key"></div>
+                <div index = 10 id = "A" class="whiteKey key"></div>
+                <div index = 12 id = "B" class="whiteKey key"></div>
             </div>
         </div>
     
         <div class="controls">
-            <p>Z,X,C,V,B,N,M - white keys ||| S,D,G,H,J - black keys</p>
+            <p>Z,X,C,V,B,N,M - white keys ||| S,D,G,H,J - black keys.</p>
+            <p>Or just use mouse</p>
         </div>
+
+        <script src="./index.js"></script>
     </div>
     
 </body>
