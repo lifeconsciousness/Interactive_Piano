@@ -85,7 +85,7 @@ function playSound(indexKey){
   }
 
   //all sounds 
-  //d-default sound, sh - sharp#
+  //d-default sound, s-synth, sh - sharp#
 
   switch(indexKey){
     case 1:
@@ -93,9 +93,9 @@ function playSound(indexKey){
       if(mode == 0){
         let C4_d = new Audio('./sounds/default/C4-d.mp3')
         C4_d.play()}
-      if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+      else if(mode == 1){
+        let C4_s = new Audio('./sounds/synth/C4-s.mp3')
+        C4_s.play()}
     break;
     case 2:
       note.innerText = "Note: C#"
@@ -103,8 +103,8 @@ function playSound(indexKey){
         let Csh4_d = new Audio('./sounds/default/Csh4-d.mp3')
         Csh4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let Csh4_s = new Audio('./sounds/synth/Csh4-s.mp3')
+        Csh4_s.play()}
     break;
     case 3:
       note.innerText = "Note: D"
@@ -112,8 +112,8 @@ function playSound(indexKey){
         let D4_d = new Audio('./sounds/default/D4-d.mp3')
         D4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let D4_s = new Audio('./sounds/synth/D4-s.mp3')
+        D4_s.play()}
     break;
     case 4:
       note.innerText = "Note: D#"
@@ -121,8 +121,8 @@ function playSound(indexKey){
         let Dsh4_d = new Audio('./sounds/default/Dsh4-d.mp3')
         Dsh4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let Dsh4_s = new Audio('./sounds/synth/Dsh4-s.mp3')
+        Dsh4_s.play()}
     break;
     case 5:
       note.innerText = "Note: E"
@@ -130,8 +130,8 @@ function playSound(indexKey){
         let E4_d = new Audio('./sounds/default/E4-d.mp3')
         E4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let E4_s = new Audio('./sounds/synth/E4-s.mp3')
+        E4_s.play()}
     break;
     case 6:
       note.innerText = "Note: F"
@@ -139,8 +139,8 @@ function playSound(indexKey){
         let F4_d = new Audio('./sounds/default/F4-d.mp3')
         F4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let F4_s = new Audio('./sounds/synth/F4-s.mp3')
+        F4_s.play()}
     break;
     case 7:
       note.innerText = "Note: F#"
@@ -148,8 +148,8 @@ function playSound(indexKey){
         let Fsh4_d = new Audio('./sounds/default/Fsh4-d.mp3')
         Fsh4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let Fsh4_s = new Audio('./sounds/synth/Fsh4-s.mp3')
+        Fsh4_s.play()}
     break;
     case 8:
       note.innerText = "Note: G"
@@ -157,8 +157,8 @@ function playSound(indexKey){
         let G4_d = new Audio('./sounds/default/G4-d.mp3')
         G4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let G4_s = new Audio('./sounds/synth/G4-s.mp3')
+        G4_s.play()}
     break;
     case 9:
       note.innerText = "Note: G#"
@@ -166,8 +166,8 @@ function playSound(indexKey){
         let Gsh4_d = new Audio('./sounds/default/Gsh4-d.mp3')
         Gsh4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let Gsh4_s = new Audio('./sounds/synth/Gsh4-s.mp3')
+        Gsh4_s.play()}
     break;
     case 10:
       note.innerText = "Note: A"
@@ -175,8 +175,8 @@ function playSound(indexKey){
         let A4_d = new Audio('./sounds/default/A4-d.mp3')
         A4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let A4_s = new Audio('./sounds/synth/A4-s.mp3')
+        A4_s.play()}
     break;
     case 11:
       note.innerText = "Note: A#"
@@ -184,8 +184,8 @@ function playSound(indexKey){
         let Ash4_d = new Audio('./sounds/default/Ash4-d.mp3')
         Ash4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let Ash4_s = new Audio('./sounds/synth/Ash4-s.mp3')
+        Ash4_s.play()}
     break;
     case 12:
       note.innerText = "Note: B"
@@ -193,8 +193,8 @@ function playSound(indexKey){
         let B4_d = new Audio('./sounds/default/B4-d.mp3')
         B4_d.play()}
       if(mode == 1){
-        let C4_d = new Audio('./sounds/')
-        .play()}
+        let B4_s = new Audio('./sounds/synth/B4-s.mp3')
+        B4_s.play()}
     break;
   }
 }

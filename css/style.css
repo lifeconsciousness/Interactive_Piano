@@ -51,17 +51,17 @@
 
 .pianoWrapper {
   background-color: var(--main-black);
-  width: 20rem;
+  width: 21rem;
   height: 12.5rem;
   margin-bottom: 15rem;
   border-radius: 15px;
-  padding-left: 1.4rem;
+  padding-left: 1.1rem;
 }
 
 .whiteKeys {
   display: grid;
   grid-template-columns: repeat(9, auto);
-  grid-column-gap: 9.4px;
+  grid-column-gap: 10px;
   z-index: 5;
   margin-top: 4rem;
 }
@@ -69,8 +69,8 @@
 .blackKeys {
   display: grid;
   grid-template-columns: repeat(9, auto);
-  grid-column-gap: 15px;
-  margin-left: 1.47rem;
+  grid-column-gap: 18px;
+  margin-left: 1.7rem;
   z-index: 10;
   position: absolute;
   margin-top: 4rem;
@@ -78,7 +78,7 @@
 
 .whiteKey {
   height: 125px;
-  width: 33px;
+  width: 37px;
   background-color: var(--main-white);
   border-radius: 10px;
   transition: 0.05s;
@@ -138,7 +138,7 @@
 }
 
 .radioBtn {
-  accent-color: white;
+  accent-color: rgb(53, 53, 53);
   border: 0px;
   width: 60%;
   height: 1.8em;
@@ -175,7 +175,7 @@
   background-color: rgba(84, 83, 83, 0.4980392157);
   position: absolute;
   height: 125px;
-  width: 33.3px;
+  width: 37px;
   border-radius: 10px;
 }
 
