@@ -87,11 +87,19 @@
 .whiteKey:hover {
   transition: 0.05s ease;
   background-color: var(--main-white-darker);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.whiteKey:active {
+  background-color: #7b6cea;
+  transition: ease;
 }
 
 .blackKey:hover {
   transition: 0.05s ease;
   background-color: var(--main-black-darker);
+  cursor: pointer;
 }
 
 .blackKey {

@@ -4,10 +4,11 @@ keys.forEach(key => key.addEventListener("click", pianoClick))
 
 function pianoClick(e){
   let keyIndex = this.getAttribute("index")
-  console.log(keyIndex)
+  //console.log(keyIndex)
   keyIndex = Number(keyIndex)
 
   playSound(keyIndex) 
+
 }
 
 //detecting keyboard input
@@ -47,43 +48,118 @@ function checkKeyPressed(event) {
 let pianoMode = document.getElementById("piano")
 let synthMode = document.getElementById("synth")
 let mode;
-if(pianoMode.checked){
-  mode = 0
-}
-if(synthMode.checked){
-  mode = 1
-}
 
 function playSound(indexKey){
+  if(pianoMode.checked){
+    mode = 0
+  }
+  if(synthMode.checked){
+    mode = 1
+  }
+
+  //all sounds 
+  //d-default sound, sh - sharp#
+
   switch(indexKey){
     case 1:
-      C_d.play()
+      if(mode == 0){
+        let C4_d = new Audio('./sounds/default/C4-d.mp3')
+        C4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
     case 2:
+      if(mode == 0){
+        let Csh4_d = new Audio('./sounds/default/Csh4-d.mp3')
+        Csh4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 3:  
+    case 3:
+      if(mode == 0){
+        let D4_d = new Audio('./sounds/default/D4-d.mp3')
+        D4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 4:  
+    case 4:
+      if(mode == 0){
+        let Dsh4_d = new Audio('./sounds/default/Dsh4-d.mp3')
+        Dsh4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 5:  
+    case 5:
+      if(mode == 0){
+        let E4_d = new Audio('./sounds/default/E4-d.mp3')
+        E4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 6:  
+    case 6:
+      if(mode == 0){
+        let F4_d = new Audio('./sounds/default/F4-d.mp3')
+        F4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 7:  
+    case 7:
+      if(mode == 0){
+        let Fsh4_d = new Audio('./sounds/default/Fsh4-d.mp3')
+        Fsh4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 8:  
+    case 8:
+      if(mode == 0){
+        let G4_d = new Audio('./sounds/default/G4-d.mp3')
+        G4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 9:  
+    case 9:
+      if(mode == 0){
+        let Gsh4_d = new Audio('./sounds/default/Gsh4-d.mp3')
+        Gsh4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 10:  
+    case 10:
+      if(mode == 0){
+        let A4_d = new Audio('./sounds/default/A4-d.mp3')
+        A4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 11:  
+    case 11:
+      if(mode == 0){
+        let Ash4_d = new Audio('./sounds/default/Ash4-d.mp3')
+        Ash4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
-    case 12:  
+    case 12:
+      if(mode == 0){
+        let B4_d = new Audio('./sounds/default/B4-d.mp3')
+        B4_d.play()}
+      if(mode == 1){
+        let C4_d = new Audio('./sounds/')
+        .play()}
     break;
   }
 }
 
-//all sounds || d-default sound
 
-let C_d = new Audio()
+
+
