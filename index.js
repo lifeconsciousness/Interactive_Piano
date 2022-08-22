@@ -1,6 +1,6 @@
-const keys = document.querySelectorAll(".key")
+const keys = document.querySelectorAll(".key") //all keys
 const whiteKeysCotainer = document.querySelector('[whiteKeys]')
-let note = document.getElementById("note")
+let note = document.getElementById("note")     //note display
 
 keys.forEach(key => key.addEventListener("click", pianoClick))
 
@@ -24,11 +24,12 @@ function pianoClick(){
  let Fsh = document.getElementById("F#") 
  let Gsh = document.getElementById("G#") 
  let Ash = document.getElementById("A#") 
+
 //detecting keyboard input
 window.addEventListener("keydown", checkKeyPressed);
 
 function checkKeyPressed(event) {
-
+  //plays sound after pressing specific keyboard key
   switch(event.keyCode){
     //white keys
     case 90: playSound(1)
@@ -84,9 +85,8 @@ function playSound(indexKey){
     mode = 1
   }
 
-  //all sounds 
   //d-default sound, s-synth, sh - sharp#
-
+  //plays samples depending on index of key
   switch(indexKey){
     case 1:
       note.innerText = "Note: C"
@@ -95,7 +95,6 @@ function playSound(indexKey){
         C4_d.play()}
       else if(mode == 1){
         let C4_s = new Audio('./sounds/synth/C4-s.mp3')
-        C4_s.volume = 1.1
         C4_s.play()}
     break;
     case 2:
